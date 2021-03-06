@@ -152,6 +152,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Container */
 
 .container {
@@ -202,7 +206,7 @@ body {
   margin-bottom: 1.8rem;
 }
 
-.form-header h2 {
+.form-header a {
   font-size: 1.5rem;
   color: #e7d8d8;
 }
@@ -233,13 +237,9 @@ button {
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
 
-.active {
-  border: 3px solid #646363;
-}
-
-.active::placeholder {
+.form-control:focus {
   color: #1f1d1d;
-  font-size: 1.4rem;
+  border: 3px solid #646363;
 }
 
 .hero-form button {
@@ -255,8 +255,9 @@ button {
   color: #a19f9d;
 }
 
-.hero-form span {
+.hero-form a {
   color: red;
   font-weight: 600;
   font-size: 0.9rem;
+  margin-left: 6px;
 }
